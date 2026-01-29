@@ -10,31 +10,40 @@ Transform your 3 AM melody ideas into MIDI notes for your DAW — no keyboard re
 
 ```
 Voice Note (WAV/M4A/MP3)
-    ↓
-┌──────────────────────────────────────┐
-│ 1. Stem Separation (HPSS)            │
-│    Isolate melody from noise          │
-└──────────────────────────────────────┘
-    ↓
-┌──────────────────────────────────────┐
-│ 2. Basic Pitch ML (Spotify)          │
-│    Detect fundamental frequencies     │
-└──────────────────────────────────────┘
-    ↓
-┌──────────────────────────────────────┐
-│ 3. Key Detection                     │
-│    Identify musical key               │
-└──────────────────────────────────────┘
-    ↓
-┌──────────────────────────────────────┐
-│ 4. Quantization & Cleanup            │
-│    • Snap notes to timing grid        │
-│    • Key-aware pitch correction       │
-│    • Harmonic pruning                 │
-│    • Note merging                     │
-└──────────────────────────────────────┘
-    ↓
-MIDI File → Your DAW
+         |
+         v
++---------------------------+
+| 1. Stem Separation        |
+|    (HPSS)                 |
+|    Isolate melody from    |
+|    noise                  |
++---------------------------+
+         |
+         v
++---------------------------+
+| 2. Basic Pitch ML         |
+|    (Spotify)              |
+|    Detect fundamental     |
+|    frequencies            |
++---------------------------+
+         |
+         v
++---------------------------+
+| 3. Key Detection          |
+|    Identify musical key   |
++---------------------------+
+         |
+         v
++---------------------------+
+| 4. Quantization & Cleanup |
+|    * Snap to timing grid  |
+|    * Key-aware correction |
+|    * Harmonic pruning     |
+|    * Note merging         |
++---------------------------+
+         |
+         v
+     MIDI File
 ```
 
 ## Quick Start
